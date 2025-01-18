@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 import json
 import re
 import time
@@ -126,16 +120,9 @@ while True:
     ai_response = response.choices[0].message.content
     print("AI:", ai_response)
 
-    # Evaluate the AI response
+    
     metrics = evaluate_response(user_input, ai_response, context)
     print("Evaluation Metrics:", metrics)
 
     messages.append({"role": "assistant", "content": ai_response})
     save_conversation(messages)
-
-
-# In[ ]:
-
-
-
-
