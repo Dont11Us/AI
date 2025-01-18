@@ -11,7 +11,7 @@ from openai import OpenAI
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="myapikey")
 
 MAX_MESSAGES = 50
 MAX_CONTEXT_LENGTH = 1024
